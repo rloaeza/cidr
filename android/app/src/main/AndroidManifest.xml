@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cidr">
+    package="com.mas_aplicaciones.cidr">
    <application
         android:label="cidr"
         android:name="${applicationName}"
