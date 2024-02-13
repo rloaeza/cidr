@@ -85,7 +85,9 @@ class _CIDRState extends State<CIDR> {
                           strMascara = "";
                           strTamRed = "";
                           primeraCorrida = true;
-                          setState(() {});
+                          setState(() {
+                            FocusManager.instance.primaryFocus?.unfocus();
+                          });
                         },
                         child: const Text("Limpiar")),
                     ElevatedButton(
@@ -221,6 +223,8 @@ class _CIDRState extends State<CIDR> {
     strTamRed = tamRed.text;
 
     primeraCorrida = false;
-    setState(() {});
+    setState(() {
+      FocusManager.instance.primaryFocus?.unfocus();
+    });
   }
 }
